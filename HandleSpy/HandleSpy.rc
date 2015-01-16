@@ -1,0 +1,311 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "atlres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (Simplified, PRC) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 32, 32
+BEGIN
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_FILE_PROCESSLIST
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "打开(&O)...",                   ID_FILE_OPEN
+        MENUITEM "保存(&S)...",                   ID_FILE_SAVE
+        MENUITEM "关闭(&C)",                      ID_FILE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "选择进程(&P)...",                 ID_FILE_PROCESSLIST
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                      ID_APP_EXIT
+    END
+    POPUP "编辑(&E)"
+    BEGIN
+        MENUITEM "选项(&O)...",                   ID_EDIT_OPTIONS
+    END
+    POPUP "视图(&V)"
+    BEGIN
+        MENUITEM "工具栏(&T)",                     ID_VIEW_TOOLBAR
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于(&A)...",                   ID_APP_ABOUT
+    END
+END
+
+IDR_MENU_POPUP MENU
+BEGIN
+    POPUP "LINE_CHART_CONTEXT"
+    BEGIN
+        MENUITEM "查看选区内函数调用...",                ID_SHOW_SELECTED_FUNCS
+    END
+    POPUP "FUNC_CALL_CONTXT"
+    BEGIN
+        MENUITEM "复制",                          ID_FUNC_COPY
+        MENUITEM "复制完整堆栈",                      ID_FUNC_COPYSTACK
+        MENUITEM "复制全部泄漏项",                     ID_FUNC_COPYALLLEAKED
+        MENUITEM SEPARATOR
+        MENUITEM "展开所有堆栈",                      ID_FUNC_EXPAND_ALL_STACKS
+        MENUITEM "收起所有堆栈",                      ID_FUNC_COLLAPSE_ALL_STACKS
+        MENUITEM SEPARATOR
+        MENUITEM "展开所有源码",                      ID_FUNC_EXPAND_ALL_SOURCE
+        MENUITEM "收起所有源码",                      ID_FUNC_COLLAPSE_ALL_SOURCE
+        MENUITEM SEPARATOR
+        MENUITEM "导泄漏列表到为TXT...",               ID_FUNC_EXPORT2TXT, INACTIVE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\HandleSpy.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 308, 196
+STYLE DS_SETFONT | WS_POPUP | WS_BORDER | WS_SYSMENU
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,149,176,50,14
+    LTEXT           "HandleSpy Ver 2.0",IDC_STATIC,148,98,78,11
+    ICON            IDR_MAINFRAME,IDC_STATIC,259,99,21,23
+    LTEXT           "Copyright(C)2013",IDC_STATIC,148,152,78,11
+    CONTROL         "<a href=""mailto:tishion@foxmail.com"">tishion@foxmail.com</a>",IDC_SYSLINK,
+                    "SysLink",LWS_USEVISUALSTYLE | WS_TABSTOP,148,132,85,14
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,7,92,294,1
+    LTEXT           "句柄泄漏检测工具",IDC_STATIC,148,115,78,11
+END
+
+IDD_DIALOG_PROCESS DIALOGEX 0, 0, 196, 201
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "选择进程"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,17,182,50,14
+    DEFPUSHBUTTON   "刷新",IDC_BUTTON_REFRESH,73,182,50,14
+    PUSHBUTTON      "取消",IDCANCEL,129,182,50,14
+    CONTROL         "",IDC_PROCESSLIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,7,182,169
+END
+
+IDD_DIALOG_DETECT DIALOGEX 0, 0, 400, 242
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "正在检测..."
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_STATIC_CHARTFRAME,"Static",SS_BLACKFRAME | WS_BORDER,0,0,401,220
+    DEFPUSHBUTTON   "停止",ID_STOP,176,223,50,14
+END
+
+IDD_DIALOG_STACK DIALOGEX 0, 0, 239, 220
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "调用栈"
+FONT 10, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LISTBOX         IDC_LIST_STACK,0,0,239,220,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG_FUNCCALL DIALOGEX 0, 0, 320, 319
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "区间句柄操作函数调用序列"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST_FUNC_CALL,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,0,0,320,301
+    PUSHBUTTON      "显示泄漏项",IDC_BUTTON_ONLYLEAK,0,303,50,14
+    PUSHBUTTON      "显示全部项",IDC_BUTTON_SHOWALL,53,303,50,14
+    PUSHBUTTON      "智能过滤",IDC_BUTTON_SMARTFILTER,192,303,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "取消",IDCANCEL,270,303,50,14
+END
+
+IDD_DIALOG_SELECTEDFUNCALL DIALOGEX 0, 0, 409, 323
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "区间泄漏函数调用"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "显示泄漏项",IDC_BUTTON_LEAKED,0,305,50,14
+    PUSHBUTTON      "显示全部项",IDC_BUTTON_ALL,57,305,50,14
+    PUSHBUTTON      "退出",IDCANCEL,359,305,50,14
+    CONTROL         "",IDC_TREE_ALL,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | TVS_INFOTIP | WS_BORDER | WS_TABSTOP,0,0,409,303
+    CONTROL         "",IDC_TREE_LEAKED,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | TVS_INFOTIP | WS_BORDER | WS_TABSTOP,0,0,409,303
+END
+
+IDD_DIALOG_PROGRESS DIALOGEX 0, 0, 450, 60
+STYLE DS_SETFONT | WS_POPUP | WS_SYSMENU
+FONT 9, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_PROGRESS_BAR,"msctls_progress32",WS_BORDER,23,30,403,14
+    CTEXT           "Static",IDC_STATIC_TEXT,92,14,267,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG_PROCESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 189
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 198
+    END
+
+    IDD_DIALOG_DETECT, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 237
+    END
+
+    IDD_DIALOG_STACK, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 170
+    END
+
+    IDD_DIALOG_PROGRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 443
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 53
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,7
+ PRODUCTVERSION 1,0,0,7
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "FileDescription", "HandleSpy"
+            VALUE "FileVersion", "1. 0. 0. 7"
+            VALUE "InternalName", "HandleSpy"
+            VALUE "LegalCopyright", "Copyright (C) 2013"
+            VALUE "OriginalFilename", "HandleSpy.exe"
+            VALUE "ProductName", "HandleSpy Module"
+            VALUE "ProductVersion", "1. 0. 0. 7"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "HandleSpy"
+END
+
+#endif    // Chinese (Simplified, PRC) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""atlres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+

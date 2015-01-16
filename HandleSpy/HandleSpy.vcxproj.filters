@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="UI">
+      <UniqueIdentifier>{ada16294-a198-4a5c-9c5b-0505d9131e2f}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;h</Extensions>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{4482ef28-9680-4618-b945-79c8c3546c44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{64375d14-05c5-41f6-97c7-bb9e70532608}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;jpg;jpeg;jpe;manifest</Extensions>
+    </Filter>
+    <Filter Include="Storage">
+      <UniqueIdentifier>{60ee9a9c-9fbd-4a33-8869-2d4fd7523824}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Symbol">
+      <UniqueIdentifier>{3f76e921-e3ca-4390-8614-e96131ecd5eb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AboutDlg.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Api.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="ApiListView.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartView.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="DetectDlg.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcessSelDlg.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="ProgressDlg.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="ShionChartView.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="StackDlg.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ApiIndex.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\CallStackTypeDefine.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\CountAndTimeTypeDefine.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\NtApiIndex.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Storage\StackStorage.h">
+      <Filter>Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="Detector.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Inject.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="CProgressBarDlg.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="LeakedFunCallDlg.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="SymbolHandler.h">
+      <Filter>Symbol</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Api.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="ApiListView.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartView.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="DetectDlg.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcessSelDlg.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="ProgressDlg.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="ShionChartView.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="StackDlg.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Storage\StackStorage.cpp">
+      <Filter>Storage</Filter>
+    </ClCompile>
+    <ClCompile Include="Detector.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="HandleSpy.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Inject.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="CProgressBarDlg.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="LeakedFunCallDlg.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="SymbolHandler.cpp">
+      <Filter>Symbol</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\HandleSpy.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="HandleSpy.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

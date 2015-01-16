@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="dllmain">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="detours">
+      <UniqueIdentifier>{831452be-62ba-4b45-9201-fb2946576b22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dprintf">
+      <UniqueIdentifier>{01937b47-b5f8-42c0-8b38-9dbd224f6fc8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="callstack">
+      <UniqueIdentifier>{bfdc4d4b-4db1-4bf5-a5a3-563bec2562ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{8d6338cf-2f01-4ba3-b59d-72fe7e650953}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="storage">
+      <UniqueIdentifier>{6969edd7-9099-45fd-a8c7-c27113a88812}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Detoursor.cpp">
+      <Filter>dllmain</Filter>
+    </ClCompile>
+    <ClCompile Include="HandleApis.cpp">
+      <Filter>dllmain</Filter>
+    </ClCompile>
+    <ClCompile Include="HSHook.cpp">
+      <Filter>dllmain</Filter>
+    </ClCompile>
+    <ClCompile Include="NtHandleApis.cpp">
+      <Filter>dllmain</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>dllmain</Filter>
+    </ClCompile>
+    <ClCompile Include="WitlessCriticalSection.cpp">
+      <Filter>dllmain</Filter>
+    </ClCompile>
+    <ClCompile Include="detours\creatwth.cpp">
+      <Filter>detours</Filter>
+    </ClCompile>
+    <ClCompile Include="detours\detours.cpp">
+      <Filter>detours</Filter>
+    </ClCompile>
+    <ClCompile Include="detours\disasm.cpp">
+      <Filter>detours</Filter>
+    </ClCompile>
+    <ClCompile Include="detours\image.cpp">
+      <Filter>detours</Filter>
+    </ClCompile>
+    <ClCompile Include="detours\modules.cpp">
+      <Filter>detours</Filter>
+    </ClCompile>
+    <ClCompile Include="dprintf\DPrintf.cpp">
+      <Filter>dprintf</Filter>
+    </ClCompile>
+    <ClCompile Include="callstack\CallStack.cpp">
+      <Filter>callstack</Filter>
+    </ClCompile>
+    <ClCompile Include="callstack\PdbSig.cpp">
+      <Filter>callstack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Storage\StackStorage.cpp">
+      <Filter>storage</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Detoursor.h">
+      <Filter>dllmain</Filter>
+    </ClInclude>
+    <ClInclude Include="DetoursorHelper.h">
+      <Filter>dllmain</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>dllmain</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>dllmain</Filter>
+    </ClInclude>
+    <ClInclude Include="SysTypedef.h">
+      <Filter>dllmain</Filter>
+    </ClInclude>
+    <ClInclude Include="WitlessCriticalSection.h">
+      <Filter>dllmain</Filter>
+    </ClInclude>
+    <ClInclude Include="detours\detours.h">
+      <Filter>detours</Filter>
+    </ClInclude>
+    <ClInclude Include="detours\detver.h">
+      <Filter>detours</Filter>
+    </ClInclude>
+    <ClInclude Include="dprintf\DPrintf.h">
+      <Filter>dprintf</Filter>
+    </ClInclude>
+    <ClInclude Include="callstack\CallStack.h">
+      <Filter>callstack</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ApiIndex.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\CallStackTypeDefine.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\NtApiIndex.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Storage\StackStorage.h">
+      <Filter>storage</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="HSHook.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

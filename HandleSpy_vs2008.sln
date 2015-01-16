@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HSHook", "HSHook\HSHook.vcproj", "{E46E2CB2-88F0-4EC2-A761-C84AE3EE6FB1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HandleSpy", "HandleSpy\HandleSpy.vcproj", "{FB9D7ECF-68FE-4352-9CBF-E48BC964299E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		NtLayer-Debug|Win32 = NtLayer-Debug|Win32
+		NtLayer-Release|Win32 = NtLayer-Release|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E46E2CB2-88F0-4EC2-A761-C84AE3EE6FB1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E46E2CB2-88F0-4EC2-A761-C84AE3EE6FB1}.Debug|Win32.Build.0 = Debug|Win32
+		{E46E2CB2-88F0-4EC2-A761-C84AE3EE6FB1}.NtLayer-Debug|Win32.ActiveCfg = NtLayer-Debug|Win32
+		{E46E2CB2-88F0-4EC2-A761-C84AE3EE6FB1}.NtLayer-Debug|Win32.Build.0 = NtLayer-Debug|Win32
+		{E46E2CB2-88F0-4EC2-A761-C84AE3EE6FB1}.NtLayer-Release|Win32.ActiveCfg = NtLayer-Release|Win32
+		{E46E2CB2-88F0-4EC2-A761-C84AE3EE6FB1}.NtLayer-Release|Win32.Build.0 = NtLayer-Release|Win32
+		{E46E2CB2-88F0-4EC2-A761-C84AE3EE6FB1}.Release|Win32.ActiveCfg = Release|Win32
+		{E46E2CB2-88F0-4EC2-A761-C84AE3EE6FB1}.Release|Win32.Build.0 = Release|Win32
+		{FB9D7ECF-68FE-4352-9CBF-E48BC964299E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FB9D7ECF-68FE-4352-9CBF-E48BC964299E}.Debug|Win32.Build.0 = Debug|Win32
+		{FB9D7ECF-68FE-4352-9CBF-E48BC964299E}.NtLayer-Debug|Win32.ActiveCfg = NtLayer-Debug|Win32
+		{FB9D7ECF-68FE-4352-9CBF-E48BC964299E}.NtLayer-Debug|Win32.Build.0 = NtLayer-Debug|Win32
+		{FB9D7ECF-68FE-4352-9CBF-E48BC964299E}.NtLayer-Release|Win32.ActiveCfg = NtLayer-Release|Win32
+		{FB9D7ECF-68FE-4352-9CBF-E48BC964299E}.NtLayer-Release|Win32.Build.0 = NtLayer-Release|Win32
+		{FB9D7ECF-68FE-4352-9CBF-E48BC964299E}.Release|Win32.ActiveCfg = Release|Win32
+		{FB9D7ECF-68FE-4352-9CBF-E48BC964299E}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
